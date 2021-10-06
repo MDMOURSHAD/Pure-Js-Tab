@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
+
+}
+
+body{
+  background: #F4F6F8;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/*
+========================================
+Start Basic Setup
+========================================
+*/
+
+*,
+*::before,
+*::after{
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+ul li{
+  list-style-type: none;
+}
+
+a,
+span,
+label{
+  display: inline-block;
+}
+
+a,
+a:focus{
+  text-decoration: none;
+}
+
+button,
+input,
+textarea,
+button:focus,
+input:focus,
+textarea:focus{
+  outline: 0;
+  border: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+p,
+hr{
+  margin: 0;
+  padding: 0;
+}
+
+/*
+========================================
+End Basic Setup
+========================================
+*/
+
+/*
+========================================
+Start Tab Css
+========================================
+*/
+.tab{
+  margin: 50px auto;
+  width: 50%;
+}
+.tab-btn button{
+  font-size: 20px;
+  background: #EEEEEF;
+  padding: 20px 15px;
+  color: #0B0B0B;
+  outline: none;
+  border: none;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 0;
+  margin-right: 5px;
+}
+.title{
+  margin-top: 50px;
+}
+.title h1{
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+/* Initialize Css */
+.acitve-btn{
+  background: #F4CA1F !important;
+  transition:background .3s ease;
+}
+.tab-wrapper{
+  position: relative;
+  padding: 100px 20px;
+  border: 2px solid #F0CA3C;
+}
+.tab-item {
+    position: absolute;
+    top: 30px;
+    left: 35px;
+    visibility: hidden;
+    opacity: 0;
+}
+#tab-item1{
+  visibility: visible;
+  opacity: 1;
+}
+/* Initialize Css */
+.tab-item h2{
+  font-size: 35px;
+  font-weight: 700;
+  color: #0B0B0B;
+  margin-bottom: 15px;
+}
+.tab-item p{
+  width: 95%;
+}
+
+/*
+========================================
+End Tab Css
+========================================
+*/
+
+

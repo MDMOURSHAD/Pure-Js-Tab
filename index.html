@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="website author name">
+		<meta name="description" content="website description">
+		<meta name="keywords" content="website keyword">
+		<title>Tab</title>
+		<!-- Favicon -->
+		<link rel="shortcut icon" type="image/png" href="assests/images/globe.png">
+		<!-- Icons -->
+		<link rel="stylesheet" type="text/css" href="assests/icons/icons.css">
+		<!-- Css Files -->
+		<link rel="stylesheet" type="text/css" href="assests/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/spacing.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/style.css">
+		<link rel="stylesheet" type="text/css" href="assests/css/responsive.css">
+	</head>
+
+	<body>
+		
+		<!-- 
+		========================================
+		Start Tab 
+		========================================
+		-->
+		<div class="title text-center">
+			<h1>Pure Js Tab</h1>
+		</div>
+		<div class="tab">
+			<div class="tab-btn">
+				<button id="tab1" class="acitve-btn" onclick="opencontent1()">Html</button>
+				<button id="tab2" onclick="opencontent2()">Css</button>
+				<button id="tab3" onclick="opencontent3()">Js</button>
+			</div>
+			<div class="tab-wrapper">
+				<div class="tab-item" id="tab-item1">
+					<h2>HTML</h2>
+					<p>Lorem, ipsum, dolor sit amet consectetur adipisicing elit. Incidunt quam, perferendis dolorum, ullam fuga molestias ab mollitia itaque a quo quisquam vel vitae voluptate odit facilis fugiat suscipit nam repellat!</p>
+				</div>
+				<div class="tab-item" id="tab-item2">
+					<h2>CSS</h2>
+					<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit aspernatur atque molestias placeat at unde labore, nemo dolore, eius, assumenda, ipsam ab. Accusamus, unde, aperiam.</p>
+				</div>
+				<div class="tab-item" id="tab-item3">
+					<h2>JS</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Alias fuga delectus perferendis velit perspiciatis illum itaque recusandae iure tempora magnam cupiditate nam ea obcaecati, doloribus, corporis sequi, qui eveniet sapiente!</p>
+				</div>
+			</div>
+		</div>
+		<!-- 
+		========================================
+		End Tab 
+		========================================
+		-->
+
+	
+		<!-- Js Files -->
+		<script src="assests/js/jquery.min.js"></script>
+		<script src="assests/js/bootstrap.min.js"></script>
+		<script src="assests/js/main.js"></script>
+		<script>
+			
+		// Tab Js
+
+		var tab1 = document.getElementById("tab1");
+		var tab2 = document.getElementById("tab2");
+		var tab3 = document.getElementById("tab3");
+		var tabitem1 = document.getElementById("tab-item1");
+		var tabitem2 = document.getElementById("tab-item2");
+		var tabitem3 = document.getElementById("tab-item3");
+
+		function opencontent1(){
+			tab1.classList.add("acitve-btn");
+			tab2.classList.remove("acitve-btn");
+			tab3.classList.remove("acitve-btn");
+			tabitem1.style.visibility = "visible";
+			tabitem2.style.visibility = "hidden";
+			tabitem3.style.visibility = "hidden";
+			tabitem1.style.opacity = "1";
+			tabitem2.style.opacity = "0";
+			tabitem3.style.opacity = "0";
+			tabitem1.style.transition = ".7s";
+			tabitem2.style.transition = "0s";
+			tabitem3.style.transition = "0s";
+		}
+		function opencontent2(){
+			tab1.classList.remove("acitve-btn");
+			tab2.classList.add("acitve-btn");
+			tab3.classList.remove("acitve-btn");
+			tabitem1.style.visibility = "hidden";
+			tabitem2.style.visibility = "visible";
+			tabitem3.style.visibility = "hidden";
+			tabitem1.style.opacity = "0";
+			tabitem2.style.opacity = "1";
+			tabitem3.style.opacity = "0";
+			tabitem1.style.transition = "0s";
+			tabitem2.style.transition = ".7s";
+			tabitem3.style.transition = "0s";		
+		}
+		function opencontent3(){
+			tab1.classList.remove("acitve-btn");
+			tab2.classList.remove("acitve-btn");
+			tab3.classList.add("acitve-btn");
+			tabitem1.style.visibility = "hidden";
+			tabitem2.style.visibility = "hidden";
+			tabitem3.style.visibility = "visible";
+			tabitem1.style.opacity = "0";
+			tabitem2.style.opacity = "0";
+			tabitem3.style.opacity = "1";
+			tabitem1.style.transition = "0s";
+			tabitem2.style.transition = "0s";
+			tabitem3.style.transition = ".7s";	
+		}
+		</script>
+	</body>
+</html>
